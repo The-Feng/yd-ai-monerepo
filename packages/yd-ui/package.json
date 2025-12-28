@@ -1,7 +1,8 @@
 {
   "name": "@yd-ui/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "YD UI - React UI 组件库",
+  "source": "src/index.tsx",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -20,8 +21,8 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.tsx --format cjs,esm --dts --external react",
-    "dev": "tsup src/index.tsx --format cjs,esm --dts --watch --external react",
+    "build": "microbundle --external react,react-dom --globals react=React,react-dom=ReactDOM",
+    "dev": "microbundle watch --external react,react-dom --globals react=React,react-dom=ReactDOM",
     "lint": "eslint src --ext .ts,.tsx"
   },
   "peerDependencies": {
@@ -31,7 +32,7 @@
   "devDependencies": {
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
-    "tsup": "^8.0.1"
+    "microbundle": "^0.15.1"
   }
 }
 

@@ -159,7 +159,7 @@ pnpm --filter demo-app dev
 
 - **Monorepo 工具**: Lerna
 - **包管理**: pnpm workspaces
-- **构建工具**: tsup (packages), Vite (apps)
+- **构建工具**: microbundle (packages, 基于 Rollup), Vite (apps)
 - **语言**: TypeScript
 - **框架**: React
 

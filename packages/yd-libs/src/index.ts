@@ -7,3 +7,6 @@ export * from './utils/validate';
 // 存储工具
 export * from './utils/storage';
 
+// 钱包工具
+export * from './utils/wallet';
+
