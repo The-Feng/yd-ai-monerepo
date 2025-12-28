@@ -1,0 +1,101 @@
+.yd-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yd-modal-wrap {
+  position: relative;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+}
+
+.yd-modal {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.yd-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #999;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.yd-modal-close:hover {
+  color: #333;
+}
+
+.yd-modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.yd-modal-body {
+  padding: 24px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.yd-modal-footer {
+  padding: 10px 16px;
+  border-top: 1px solid #f0f0f0;
+  text-align: right;
+}
+
+.yd-modal-btn {
+  margin-left: 8px;
+  padding: 4px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.yd-modal-btn-cancel {
+  color: #333;
+}
+
+.yd-modal-btn-cancel:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.yd-modal-btn-ok {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+}
+
+.yd-modal-btn-ok:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+

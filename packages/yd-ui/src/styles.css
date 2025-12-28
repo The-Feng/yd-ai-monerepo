@@ -1,0 +1,8 @@
+/* 导入所有组件的样式 */
+@import './Button/Button.css';
+@import './Input/Input.css';
+@import './Card/Card.css';
+@import './Modal/Modal.css';
+@import './Switch/Switch.css';
+@import './Tag/Tag.css';
+

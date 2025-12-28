@@ -10,3 +10,15 @@ export type { InputProps } from './Input';
 export { Card } from './Card';
 export type { CardProps } from './Card';
 
+// Modal
+export { Modal } from './Modal';
+export type { ModalProps } from './Modal';
+
+// Switch
+export { Switch } from './Switch';
+export type { SwitchProps } from './Switch';
+
+// Tag
+export { Tag } from './Tag';
+export type { TagProps } from './Tag';
+

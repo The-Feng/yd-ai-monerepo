@@ -130,6 +130,9 @@ React UI 组件库，提供常用的 UI 组件。
 - `Button`: 按钮组件（支持多种类型和尺寸）
 - `Input`: 输入框组件（支持前缀、后缀、错误状态）
 - `Card`: 卡片组件（支持标题、操作区域、悬浮效果）
+- `Modal`: 对话框组件（支持自定义内容和底部）
+- `Switch`: 开关组件（支持受控和非受控）
+- `Tag`: 标签组件（支持多种颜色和可关闭）
 
 ## 应用说明
 
@@ -144,6 +147,24 @@ lerna run dev --scope demo-app
 
 # 或使用 pnpm
 pnpm --filter demo-app dev
+```
+
+### storybook-app
+
+Storybook 应用，用于展示和测试 `@yd-ui/core` 组件库的所有组件。
+
+**特点：**
+- ✅ Stories 文件与组件完全分离
+- ✅ 组件位于 `packages/yd-ui/src/`
+- ✅ Stories 位于 `apps/storybook-app/src/stories/`
+
+**运行方式：**
+```bash
+# 启动 Storybook
+pnpm --filter storybook-app storybook
+
+# 构建静态 Storybook
+pnpm --filter storybook-app build-storybook
 ```
 
 ## Lerna 特性
