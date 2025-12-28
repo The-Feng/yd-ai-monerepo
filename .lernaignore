@@ -1,0 +1,15 @@
+# 忽略的文件和目录
+node_modules
+dist
+build
+*.log
+.DS_Store
+coverage
+.idea
+.vscode
+*.tsbuildinfo
+.git
+.gitignore
+README.md
+pnpm-lock.yaml
+

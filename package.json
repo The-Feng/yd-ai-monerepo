@@ -1,0 +1,35 @@
+{
+  "name": "yd-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "YD AI Monorepo",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build",
+    "lint": "lerna run lint --parallel",
+    "test": "lerna run test --parallel",
+    "changed": "lerna changed",
+    "diff": "lerna diff",
+    "version": "lerna version",
+    "prepublish": "pnpm build",
+    "publish": "lerna publish",
+    "publish:canary": "lerna publish --canary",
+    "publish:from-package": "lerna publish from-package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.45",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "lerna": "^8.1.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
+

@@ -1,0 +1,89 @@
+.yd-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.yd-button:hover:not(.yd-button-disabled):not(.yd-button-loading) {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.yd-button:active:not(.yd-button-disabled):not(.yd-button-loading) {
+  transform: scale(0.98);
+}
+
+.yd-button-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+}
+
+.yd-button-primary:hover:not(.yd-button-disabled):not(.yd-button-loading) {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.yd-button-dashed {
+  border-style: dashed;
+}
+
+.yd-button-text {
+  border: none;
+  background: transparent;
+}
+
+.yd-button-link {
+  border: none;
+  background: transparent;
+  color: #1890ff;
+  padding: 0;
+}
+
+.yd-button-link:hover:not(.yd-button-disabled):not(.yd-button-loading) {
+  text-decoration: underline;
+}
+
+.yd-button-small {
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.yd-button-large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.yd-button-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.yd-button-loading {
+  cursor: not-allowed;
+}
+
+.yd-button-loading-icon {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

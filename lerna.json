@@ -1,0 +1,37 @@
+{
+  "version": "independent",
+  "npmClient": "pnpm",
+  "packages": [
+    "packages/*",
+    "apps/*"
+  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "registry": "http://localhost:4873/",
+      "ignoreChanges": [
+        "*.md",
+        "*.test.ts",
+        "*.test.tsx",
+        "*.spec.ts",
+        "*.spec.tsx"
+      ],
+      "allowBranch": ["main", "master", "develop"],
+      "gitChecks": false
+    },
+    "version": {
+      "allowBranch": ["main", "master"],
+      "conventionalCommits": true,
+      "createRelease": "github"
+    },
+    "bootstrap": {
+      "ignore": "demo-app"
+    },
+    "run": {
+      "stream": true,
+      "parallel": true
+    }
+  }
+}
+
